@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<!-- Relationship -->
+		<record id="view_relationship_form" model="ir.ui.view">
+			<field name="name">res.relationship.form</field>
+			<field name="model">res.relationship</field>
+			<field name="arch" type="xml">
+				<form string="Relationship">
+					<sheet>
+						<group>
+							<group>
+								<field name="name" />
+							</group>
+							<group>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_relationship_tree" model="ir.ui.view">
+			<field name="name">res.relationship.tree</field>
+			<field name="model">res.relationship</field>
+			<field name="arch" type="xml">
+				<tree string="Relationship">
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="action_relationship" model="ir.actions.act_window">
+			<field name="name">Relationship</field>
+			<field name="res_model">res.relationship</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!-- Religion -->
+		<record id="view_religion_form" model="ir.ui.view">
+			<field name="name">res.religion.form</field>
+			<field name="model">res.religion</field>
+			<field name="arch" type="xml">
+				<form string="Religion">
+					<sheet>
+						<group>
+							<group>
+								<field name="name" />
+							</group>
+							<group>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_religion_tree" model="ir.ui.view">
+			<field name="name">res.religion.tree</field>
+			<field name="model">res.religion</field>
+			<field name="arch" type="xml">
+				<tree string="Religion">
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="action_religion" model="ir.actions.act_window">
+			<field name="name">Religion</field>
+			<field name="res_model">res.religion</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!-- Document Type -->
+		<record id="view_employee_document_type_form" model="ir.ui.view">
+			<field name="name">employee.document.type.form</field>
+			<field name="model">employee.document.type</field>
+			<field name="arch" type="xml">
+				<form string="Document Type">
+					<sheet>
+						<group>
+							<group>
+								<field name="name" />
+							</group>
+							<group>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_employee_document_type_tree" model="ir.ui.view">
+			<field name="name">employee.document.type.tree</field>
+			<field name="model">employee.document.type</field>
+			<field name="arch" type="xml">
+				<tree string="Document Type">
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="action_employee_document_type" model="ir.actions.act_window">
+			<field name="name">Document Type</field>
+			<field name="res_model">employee.document.type</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+	</data>
+</openerp>
